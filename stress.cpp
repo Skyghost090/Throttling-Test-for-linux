@@ -12,7 +12,7 @@ void stress(){
         system("killall stress > /dev/null");
         exit(0);
     } else if(pid < 0) { // Erro ao criar o processo filho
-        perror("Erro ao criar o processo filho");
+        perror("Error creating child process\n");
         exit(1);
     } else { // Processo pai
     // Espera o processo filho terminar para evitar zumbis
